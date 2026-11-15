@@ -1,0 +1,16 @@
+{
+  "kernel_release": "7.0.12-1-cachyos",
+  "package_version": "7.0.12-1",
+  "architecture": "x86_64_v3",
+  "qemu_tag": "v11.0.3",
+  "qemu_commit": "aeec49e8170de7846f476124602cf7acd400c3df",
+  "packages": {
+    "linux-cachyos-7.0.12-1-x86_64_v3.pkg.tar.zst": "9c3d737fed7d822941a3bf5c62f621de3fe8e50a8ebe57c9904d432989432fa3",
+    "linux-cachyos-headers-7.0.12-1-x86_64_v3.pkg.tar.zst": "52a4b891417ad5f1ddd0f9d0b0c1031249696db1e43edda85e76b0af7ad9edba"
+  },
+  "signatures": {
+    "linux-cachyos-7.0.12-1-x86_64_v3.pkg.tar.zst.sig": "2c98e6b72e648cf1efad388c151870410853819c7d46c8c99dce3a624843467e",
+    "linux-cachyos-headers-7.0.12-1-x86_64_v3.pkg.tar.zst.sig": "bb50db9eea5806f14586436573f0fa82ad74fc8937f7e20242cf968b2b7451e3"
+  },
+  "amd_patch_sha256": "4bfb17484f874e0f8670e562f006fb76c3ef244bdadaa227e1269968b79a85e5"
+}

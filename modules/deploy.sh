@@ -3,6 +3,13 @@
 source ./utils.sh || { echo "Failed to load utilities module!"; exit 1; }
 
 system_info() {
+    # Opt-in immutable profile build; the legacy default stays unchanged.
+    QEMU_EMULATOR="${AUTOVIRT_QEMU_EMULATOR:-/opt/AutoVirt/emulator/bin/qemu-system-x86_64}"
+    if [[ ! -x "$QEMU_EMULATOR" ]]; then
+        fmtr::error "QEMU executable not found: $QEMU_EMULATOR"
+        exit 1
+    fi
+
     # Domain Name
     DOMAIN_NAME="AutoVirt"
 
@@ -401,7 +408,7 @@ configure_xml() {
         # 'qemu-system-x86_64' binary path
         #
 
-        --xml "./devices/emulator=/opt/AutoVirt/emulator/bin/qemu-system-x86_64"
+        --xml "./devices/emulator=$QEMU_EMULATOR"
 
 
 
