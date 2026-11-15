@@ -1,2 +1,7 @@
 src
 logs
+
+# Local host identities, build products and audit records must never be published.
+.local/
+__pycache__/
+*.py[cod]
